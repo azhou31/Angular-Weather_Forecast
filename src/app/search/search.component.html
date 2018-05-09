@@ -1,0 +1,23 @@
+<body>
+  <div class="wrapper" style="text-align:center">
+
+    <form action="" method="GET" ng-submit="searchWeather()">
+      <input type="text" id="search_box" placeholder="Enter City Name Here..." name="city" [(ngModel)]="city"
+      >
+      <button class="btn btn-primary" (click)="
+      save()" >Search</button>
+    </form>
+
+      <h3>{{city}}</h3>
+      <div id="info">
+        Temperature: {{info.temp}}
+        <p>Status: {{info.description | capitalize }}</p>  
+        <p>Minimum temperature: {{info.min}}</p>
+        <p>Maximum temperature: {{info.max}}</p>
+        <p>Humidity: {{info.humidity}}%</p>
+        <p>Wind Speed: {{info.wind}}mi/hr</p>
+      </div>
+  
+
+  </div>
+</body>

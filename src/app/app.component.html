@@ -1,8 +1,10 @@
 <head>
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+
 </head>
 <body>
-  <h1>Weather Forecast</h1>
+  <h1>WeatherCast</h1>
+  <br>
   <header>    
     <a [routerLink]="['/chicago']">Chicago, IL</a> |
     <a [routerLink]="['/dallas']">Dallas, TX</a> |
@@ -11,6 +13,8 @@
     <a [routerLink]="['/sanjose']">San Francisco, CA</a> |
     <a [routerLink]="['/seattle']">Seattle, WA</a>
   </header>
+  <br>
+  <app-search></app-search>
 
 <router-outlet></router-outlet>
 </body>

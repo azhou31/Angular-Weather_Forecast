@@ -6,6 +6,7 @@ import { ChicagoComponent } from './chicago/chicago.component';
 import { DallasComponent } from './dallas/dallas.component';
 import { NewyorkComponent } from './newyork/newyork.component';
 import { SanjoseComponent } from './sanjose/sanjose.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,8 @@ const routes: Routes = [
       {path:'dallas', pathMatch:'full', component:DallasComponent},
       {path:'newyork', pathMatch:'full', component:NewyorkComponent},
       {path:'chicago', pathMatch:'full', component:ChicagoComponent},
-    ]
+      {path:'search', pathMatch:'full', component:SearchComponent}
+    ],
   }
 ];
 
