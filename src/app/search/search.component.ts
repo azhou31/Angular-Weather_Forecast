@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherServiceService } from './../weather-service.service';
-import { Routes, RouterModule } from '@angular/router';
+import { CapitalizePipe } from "./../capitalize.pipe";
+
 
 
 @Component({
@@ -11,6 +12,7 @@ import { Routes, RouterModule } from '@angular/router';
 export class SearchComponent implements OnInit {
   city:string;
   info: any = {humidity: "", description:"", temp:"", min:"", max:"",wind:""};
+  show=false;
   
 
   constructor(private _weatherserviceservice: WeatherServiceService) { }
@@ -33,12 +35,8 @@ export class SearchComponent implements OnInit {
       
     }, (error)=>{
       console.log(error);
-})
-
-    // let location= {
-    //   city: this.city
-    // };
-    // localStorage.setItem(key:'location', JSON.stringify(location));
+    });
+    this.show = !this.show;
 
   }
 

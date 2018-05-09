@@ -3,18 +3,31 @@
 
 </head>
 <body>
-  <h1>WeatherCast</h1>
-  <br>
-  <header>    
-    <a [routerLink]="['/chicago']">Chicago, IL</a> |
-    <a [routerLink]="['/dallas']">Dallas, TX</a> |
-    <a [routerLink]="['/losangeles']">Los Angeles, CA</a> |
-    <a [routerLink]="['/newyork']">New York City, New York</a> |
-    <a [routerLink]="['/sanjose']">San Francisco, CA</a> |
-    <a [routerLink]="['/seattle']">Seattle, WA</a>
-  </header>
-  <br>
-  <app-search></app-search>
 
-<router-outlet></router-outlet>
+    <a href="/"><h1>WeatherCast</h1></a>
+    <br>
+    <div class="weather">
+      <div class="weatherData">
+        <h4>Popular Cities</h4>
+        <a [routerLink]="['/chicago']">Chicago, IL</a>
+        <br>  
+        <a [routerLink]="['/dallas']">Dallas, TX</a>
+        <br>  
+        <a [routerLink]="['/losangeles']">Los Angeles, CA</a>
+        <br>  
+        <a [routerLink]="['/newyork']">New York City, New York</a>
+        <br>  
+        <a [routerLink]="['/sanjose']">San Francisco, CA</a>
+        <br>  
+        <a [routerLink]="['/seattle']">Seattle, WA</a>
+        <Br>
+          <a [routerLink]="['/search']">Search</a>
+        </div>
+        
+        <div class="weatherData">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+      
+
 </body>

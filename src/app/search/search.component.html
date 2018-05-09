@@ -7,16 +7,17 @@
       <button class="btn btn-primary" (click)="
       save()" >Search</button>
     </form>
-
-      <h3>{{city}}</h3>
-      <div id="info">
-        Temperature: {{info.temp}}
-        <p>Status: {{info.description | capitalize }}</p>  
-        <p>Minimum temperature: {{info.min}}</p>
-        <p>Maximum temperature: {{info.max}}</p>
-        <p>Humidity: {{info.humidity}}%</p>
-        <p>Wind Speed: {{info.wind}}mi/hr</p>
-      </div>
+<div class="toggle-panel" *ngIf="show">
+  <h3>{{city | capitalize}}</h3>
+  <div id="info">
+    Temperature: {{info.temp}}
+    <p>Status: {{info.description | capitalize }}</p>  
+    <p>Minimum temperature: {{info.min}}</p>
+    <p>Maximum temperature: {{info.max}}</p>
+    <p>Humidity: {{info.humidity}}%</p>
+    <p>Wind Speed: {{info.wind}}mi/hr</p>
+  </div>
+</div>
   
 
   </div>
