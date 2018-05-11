@@ -3,8 +3,9 @@
 
 </head>
 <body>
-
-    <a href="/"><h1>WeatherCast</h1></a>
+  <div class="header-container">
+      <a href="/"><img src="assets/weather_header.png" alt="logo" ></a>
+  </div>
     <br>
     <div class="weather">
       <div class="weatherData">
@@ -15,7 +16,7 @@
         <br>  
         <a [routerLink]="['/losangeles']">Los Angeles, CA</a>
         <br>  
-        <a [routerLink]="['/newyork']">New York City, New York</a>
+        <a [routerLink]="['/newyork']">New York City, NY</a>
         <br>  
         <a [routerLink]="['/sanjose']">San Francisco, CA</a>
         <br>  
@@ -29,5 +30,5 @@
         </div>
       </div>
       
-
-</body>
+    </body>
+    
