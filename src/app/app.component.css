@@ -34,3 +34,6 @@ a{
     vertical-align: top;
     margin: 20px;
 }
+.weatherDataSearch{
+    display: inline-block;
+}
