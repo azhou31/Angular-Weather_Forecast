@@ -9,7 +9,7 @@
     <br>
     <div class="weather">
       <div class="weatherData">
-        <h4>Popular Cities</h4>
+        <h3>Popular Cities</h3>
         <a [routerLink]="['/chicago']">Chicago, IL</a>
         <br>  
         <a [routerLink]="['/dallas']">Dallas, TX</a>
@@ -22,11 +22,15 @@
         <br>  
         <a [routerLink]="['/seattle']">Seattle, WA</a>
         <Br>
-          <a [routerLink]="['/search']">Search</a>
+          <!-- <a [routerLink]="['/search']">Search</a> -->
         </div>
         
         <div class="weatherData">
           <router-outlet></router-outlet>
+        </div>
+        
+        <div class="weatherData">
+          <app-search></app-search>
         </div>
       </div>
       

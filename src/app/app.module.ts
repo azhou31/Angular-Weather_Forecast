@@ -22,6 +22,7 @@ import { CapitalizePipe } from './capitalize.pipe';
 //SERVICES
 import { WeatherServiceService } from './weather-service.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { WeatherServiceService } from './weather-service.service';
     LosangelesComponent,
     NewyorkComponent,
     CapitalizePipe,
-    SearchComponent
+    SearchComponent,
+    
   ],
   imports: [
     BrowserModule,

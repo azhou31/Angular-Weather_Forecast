@@ -14,14 +14,12 @@ export class SearchComponent implements OnInit {
   info: any = {humidity: "", description:"", temp:"", min:"", max:"",wind:""};
   show=false;
   
-
   constructor(private _weatherserviceservice: WeatherServiceService) { }
 
   ngOnInit() { 
   }
 
   save(){
-
     console.log("wanted to get the weather!")
     this._weatherserviceservice.searchWeather(this.city)
     .subscribe((response)=>{

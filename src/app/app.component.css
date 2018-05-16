@@ -1,7 +1,7 @@
 body{
     font-family: 'Lato', sans-serif;
     margin:0;
-    padding:20px;
+    padding:30px 20px;
     height:100%;
     color:white;
 }
@@ -13,15 +13,9 @@ body{
     vertical-align: middle;
 }
 
-.header-container_primary{
-    display: inline;
-
-}
-
 img{
     max-width: 100%;
     height:auto;
-    
 }
 
 a{
@@ -33,8 +27,10 @@ a{
 .weatherData{
     display:inline-block;
     vertical-align: top;
+    padding: 10px;
 }
 .weather{
     display:inline-block;
     vertical-align: top;
+    margin: 20px;
 }
